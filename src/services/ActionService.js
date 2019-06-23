@@ -10,7 +10,7 @@ class ActionService {
     }
 
     search = query => {
-        return fetch(`https://hidden-shore-64759.herokuapp.com/api/actions/search/${query}`, {
+        return fetch(`https://smoke-application.herokuapp.com/api/actions/search/${query}`, {
             credentials: 'include'
         }).then(response => {
             if (response.status === 200) {
@@ -26,7 +26,7 @@ class ActionService {
     };
 
     getFollows = () => {
-        return fetch(`https://hidden-shore-64759.herokuapp.com/api/actions/follows`, {
+        return fetch(`https://smoke-application.herokuapp.com/api/actions/follows`, {
             credentials: 'include'
         }).then(response => {
             if (response.status === 200) {
@@ -42,7 +42,7 @@ class ActionService {
     };
 
     follow = userId => {
-        return fetch(`https://hidden-shore-64759.herokuapp.com/api/actions/follow/${userId}`, {
+        return fetch(`https://smoke-application.herokuapp.com/api/actions/follow/${userId}`, {
             method: 'POST',
             credentials: 'include'
         }).then(response => {
@@ -59,7 +59,7 @@ class ActionService {
     };
 
     unfollow = userId => {
-        return fetch(`https://hidden-shore-64759.herokuapp.com/api/actions/unfollow/${userId}`, {
+        return fetch(`https://smoke-application.herokuapp.com/api/actions/unfollow/${userId}`, {
             method: 'POST',
             credentials: 'include'
         }).then(response => {
@@ -76,7 +76,7 @@ class ActionService {
     };
 
     getPlaylists = () => {
-        return fetch(`https://hidden-shore-64759.herokuapp.com/api/actions/playlists`, {
+        return fetch(`https://smoke-application.herokuapp.com/api/actions/playlists`, {
             credentials: 'include'
         }).then(response => {
             if (response.status === 200) {
@@ -92,7 +92,7 @@ class ActionService {
     };
 
     addPlaylist = playlistId => {
-        return fetch(`https://hidden-shore-64759.herokuapp.com/api/actions/playlists/${playlistId}`, {
+        return fetch(`https://smoke-application.herokuapp.com/api/actions/playlists/${playlistId}`, {
             method: 'POST',
             credentials: 'include'
         }).then(response => {
@@ -109,7 +109,7 @@ class ActionService {
     };
 
     deletePlaylist = playlistId => {
-        return fetch(`https://hidden-shore-64759.herokuapp.com/api/actions/playlists/${playlistId}/delete`, {
+        return fetch(`https://smoke-application.herokuapp.com/api/actions/playlists/${playlistId}/delete`, {
             method: 'POST',
             credentials: 'include'
         }).then(response => {

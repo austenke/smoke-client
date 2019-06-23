@@ -10,7 +10,7 @@ class LoginService {
     }
 
     getUser = () => {
-        return fetch(`https://hidden-shore-64759.herokuapp.com/api/users/`, {
+        return fetch(`https://smoke-application.herokuapp.com/api/users/`, {
             credentials: 'include'
         }).then(response => {
             if (response.status === 200) {
@@ -26,7 +26,7 @@ class LoginService {
     };
 
     getProfile = userId => {
-        return fetch(`https://hidden-shore-64759.herokuapp.com/api/users/profile/${userId}`, {
+        return fetch(`https://smoke-application.herokuapp.com/api/users/profile/${userId}`, {
             credentials: 'include'
         }).then(response => {
             if (response.status === 200) {
@@ -42,7 +42,7 @@ class LoginService {
     };
 
     refreshJwt = () => {
-        return fetch(`https://hidden-shore-64759.herokuapp.com/api/users/refreshJWT`, {
+        return fetch(`https://smoke-application.herokuapp.com/api/users/refreshJWT`, {
             credentials: 'include'
         }).then(response => {
             if (response.status === 200) {
@@ -58,7 +58,7 @@ class LoginService {
     };
 
     login = (email, password) => {
-        return fetch(`https://hidden-shore-64759.herokuapp.com/api/users/login`, {
+        return fetch(`https://smoke-application.herokuapp.com/api/users/login`, {
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
@@ -83,7 +83,7 @@ class LoginService {
     };
 
     logout = () => {
-        return fetch(`https://hidden-shore-64759.herokuapp.com/api/users/logout`, {
+        return fetch(`https://smoke-application.herokuapp.com/api/users/logout`, {
             method: 'POST',
             credentials: 'include'
         }).then(response => {
@@ -100,7 +100,7 @@ class LoginService {
     };
 
     register = (email, displayName, password, role) => {
-        return fetch(`https://hidden-shore-64759.herokuapp.com/api/users/createUser`, {
+        return fetch(`https://smoke-application.herokuapp.com/api/users/createUser`, {
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
@@ -127,7 +127,7 @@ class LoginService {
     };
 
     updateUser = (userId, email, displayName, password, role) => {
-        return fetch(`https://hidden-shore-64759.herokuapp.com/api/users/updateUser`, {
+        return fetch(`https://smoke-application.herokuapp.com/api/users/updateUser`, {
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
