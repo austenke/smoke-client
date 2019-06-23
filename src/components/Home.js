@@ -28,7 +28,7 @@ export default class Home extends React.Component {
                             <i className="fa fa-arrow-down"></i>
                         </button>
                 </div>
-                <video muted loop autoPlay="autoplay" src={window.location.origin + '/anim.mp4'}></video>
+                <video muted loop autoPlay="autoplay" src={window.location.origin + '/smoke-client/anim.mp4'}></video>
                 <div className="container text-center mt-5" ref={el => { this.el = el; }}>
                     <h1 className="display-4 text-white">Trending</h1>
                     {
