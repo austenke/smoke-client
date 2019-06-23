@@ -9,7 +9,7 @@ export default class Search extends React.Component {
 
         const pathname = window.location.pathname;
         const paths = pathname.split('/');
-        const urlQuery = paths[2] === undefined? "" : paths[2];
+        const urlQuery = paths[3] === undefined? "" : paths[3];
 
         this.state = {
             query: urlQuery,

@@ -8,10 +8,10 @@ export default class Search extends React.Component {
 
         const pathname = window.location.pathname;
         const paths = pathname.split('/');
-        const playlistName = decodeURI(paths[2]);
-        const userId = paths[3];
-        const playlistId = paths[4];
-        const query = decodeURI(paths[5]);
+        const playlistName = decodeURI(paths[3]);
+        const userId = paths[4];
+        const playlistId = paths[5];
+        const query = decodeURI(paths[6]);
 
         this.state = {
             playlistName: playlistName,

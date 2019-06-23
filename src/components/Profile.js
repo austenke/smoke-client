@@ -7,7 +7,7 @@ export default class Profile extends React.Component {
 
         const pathname = window.location.pathname;
         const paths = pathname.split('/');
-        const profileId = paths[2] === undefined? this.props.user.id : paths[2];
+        const profileId = paths[3] === undefined? this.props.user.id : paths[3];
 
         this.state = {
             edit: false,
