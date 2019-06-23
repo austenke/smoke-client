@@ -21,7 +21,7 @@ export default class Main extends React.Component {
             <div className="bg-primary contentContainer h-100">
                 {
                     !this.props.loading &&
-                    <Router>
+                    <Router basename={'smoke-client'}>
                         <Nav {...this.props} />
                         <Route
                             exact path="/"
