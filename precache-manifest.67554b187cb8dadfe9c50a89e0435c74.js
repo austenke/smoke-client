@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "de29763c7e588faa889433b810c3aab8",
+    "revision": "831c0c4221fc4e8040fec0ab0468c74f",
     "url": "/smoke-client/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/smoke-client/static/css/2.0624914a.chunk.css"
   },
   {
-    "revision": "6306015e9ba20e520950",
-    "url": "/smoke-client/static/css/main.70ed8ac7.chunk.css"
+    "revision": "c1ac77dc9df8b0f21082",
+    "url": "/smoke-client/static/css/main.d8c4b5f6.chunk.css"
   },
   {
     "revision": "f09d4b706be57ce461e2",
     "url": "/smoke-client/static/js/2.63607b2e.chunk.js"
   },
   {
-    "revision": "6306015e9ba20e520950",
+    "revision": "c1ac77dc9df8b0f21082",
     "url": "/smoke-client/static/js/main.24dcdc4d.chunk.js"
   },
   {
