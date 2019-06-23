@@ -19,7 +19,7 @@ export default class Home extends React.Component {
                 </div>
                 <div className="main-jumbo jumbotron text-center">
                     <h1 className="display-4">Smoke</h1>
-                    <p className="lead">Find new music faster</p>
+                    <p className="lead">Find music faster</p>
                     <hr className="my-4"/>
                         <p>Smoke allows you to find playlist curators that match your interests. Instead of
                             following artists, you can explore the world of playlist creation and listen to
