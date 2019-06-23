@@ -8,7 +8,7 @@
         l.replace(
             l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
             l.pathname.split('/').slice(0, 2).join('/') + '?p=/' +
-            l.pathname.split('/').slice(1).join('/').replace(/&/g, '~and~').replace('%2F', '/')
+            l.pathname.split('/').slice(1).join('/').replace(/&/g, '~and~')
         );
     </script>
 </head>

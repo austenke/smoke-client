@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4b6e09fcbc665a0dc2c29542e25423a9",
+    "revision": "8a884ef95faccba7ee19fbe4e6c8ebd8",
     "url": "/smoke-client/index.html"
   },
   {
