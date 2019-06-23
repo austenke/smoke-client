@@ -155,7 +155,7 @@ export default class Profile extends React.Component {
                             {
                                 this.props.user.role === "CURATOR" && this.props.user.id === this.state.profileId && this.props.savedPlaylists.length === 0 &&
                                 <div className="card bg-dark text-black mt-4">
-                                    <img className="card-img" src={window.location.origin + '/playlist.jpg'} alt="Card image"/>
+                                    <img className="card-img" src={window.location.origin + '/smoke-client/playlist.jpg'} alt="Card image"/>
                                     <div className="card-img-overlay">
                                         <h5 className="card-title">Interested in curating your own playlists?</h5>
                                         <p className="card-text">Use the search feature to find playlists to add to your curated list!</p>
@@ -165,7 +165,7 @@ export default class Profile extends React.Component {
                             {
                                 this.props.user.role !== "CURATOR" && this.props.user.id === this.state.profileId &&
                                 <div className="card bg-dark text-black mt-4">
-                                    <img className="card-img" src={window.location.origin + '/playlist.jpg'} alt="Card image"/>
+                                    <img className="card-img" src={window.location.origin + '/smoke-client/playlist.jpg'} alt="Card image"/>
                                         <div className="card-img-overlay">
                                             <h5 className="card-title">Interested in curating your own playlists?</h5>
                                             <p className="card-text">Change your role to Curator and start sharing your favorite playlists!</p>
