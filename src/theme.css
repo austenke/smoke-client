@@ -48,7 +48,7 @@ body {
 .gradient {
   background-image: radial-gradient( circle at 50% 48%, #000000, rgba(11, 39, 65, 0.32) 90%, rgba(0, 0, 0, 0.0));
   width: 100%;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 60px);
   min-height: 600px;
   object-fit: cover;
   position: relative;
