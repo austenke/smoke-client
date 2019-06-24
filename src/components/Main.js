@@ -13,12 +13,38 @@ export default class Main extends React.Component {
     constructor(props) {
         super(props);
 
+        this.state = {
+            waitMessage: false
+        };
+
         this.props.refreshJwt();
+
+        setTimeout(() => {
+            if (this.props.loading) {
+                this.setState({
+                    waitMessage: true
+                })
+            }
+        }, 4000);
     }
 
     render() {
         return (
             <div className="bg-primary contentContainer h-100">
+                {
+                    this.state.waitMessage &&
+                    <div className="text-center text-white w-100 loadingMessage">
+                        <h2>Server is starting, this may take a second...</h2>
+                    </div>
+                }
+                {
+                    this.props.loading &&
+                    <div id="home-jumbo" className="center main-jumbo jumbotron">
+                        <div className="spinner-border home-spinner" role="status">
+                            <span className="sr-only">Loading...</span>
+                        </div>
+                    </div>
+                }
                 {
                     !this.props.loading &&
                     <Router basename={'smoke-client'}>
