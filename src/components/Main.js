@@ -14,10 +14,19 @@ export default class Main extends React.Component {
         super(props);
 
         this.state = {
-            waitMessage: false
+            waitMessage: false,
+            spinner: false
         };
 
         this.props.refreshJwt();
+
+        setTimeout(() => {
+            if (this.props.loading) {
+                this.setState({
+                    spinner: true
+                })
+            }
+        }, 500);
 
         setTimeout(() => {
             if (this.props.loading) {
@@ -38,7 +47,7 @@ export default class Main extends React.Component {
                     </div>
                 }
                 {
-                    this.props.loading &&
+                    this.state.spinner &&
                     <div id="home-jumbo" className="center main-jumbo jumbotron">
                         <div className="spinner-border home-spinner" role="status">
                             <span className="sr-only">Loading...</span>
