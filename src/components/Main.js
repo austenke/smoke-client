@@ -41,13 +41,13 @@ export default class Main extends React.Component {
         return (
             <div className="bg-primary contentContainer h-100">
                 {
-                    this.state.waitMessage &&
+                    this.props.loading && this.state.waitMessage &&
                     <div className="text-center text-white w-100 loadingMessage">
                         <h2>Server is starting, this may take a second...</h2>
                     </div>
                 }
                 {
-                    this.state.spinner &&
+                    this.props.loading && this.state.spinner &&
                     <div id="home-jumbo" className="center main-jumbo jumbotron">
                         <div className="spinner-border home-spinner" role="status">
                             <span className="sr-only">Loading...</span>
