@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c788258ff59f497a832f790f3fef65d3",
+    "revision": "58913f15717b5f56dbda3e03c0811656",
     "url": "/smoke-client/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/smoke-client/static/css/2.0624914a.chunk.css"
   },
   {
-    "revision": "334e0a2f06e6b5a3e7df",
+    "revision": "6819f5512e1eb87e8bc5",
     "url": "/smoke-client/static/css/main.6adea360.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/smoke-client/static/js/2.63607b2e.chunk.js"
   },
   {
-    "revision": "334e0a2f06e6b5a3e7df",
-    "url": "/smoke-client/static/js/main.1209c741.chunk.js"
+    "revision": "6819f5512e1eb87e8bc5",
+    "url": "/smoke-client/static/js/main.82ea61b7.chunk.js"
   },
   {
     "revision": "4d40a858946837aa00eb",
