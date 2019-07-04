@@ -21,7 +21,7 @@ export default class Main extends React.Component {
         this.props.refreshJwt();
 
         setTimeout(() => {
-            if (this.props.loading) {
+            if (this.props.initializing) {
                 this.setState({
                     spinner: true
                 })
@@ -29,7 +29,7 @@ export default class Main extends React.Component {
         }, 500);
 
         setTimeout(() => {
-            if (this.props.loading) {
+            if (this.props.initializing) {
                 this.setState({
                     waitMessage: true
                 })
@@ -41,13 +41,13 @@ export default class Main extends React.Component {
         return (
             <div className="bg-primary contentContainer h-100">
                 {
-                    this.props.loading && this.state.waitMessage &&
+                    this.props.initializing && this.state.waitMessage &&
                     <div className="text-center text-white w-100 loadingMessage">
                         <h2>Server is starting, this may take a second...</h2>
                     </div>
                 }
                 {
-                    this.props.loading && this.state.spinner &&
+                    this.props.initializing && this.state.spinner &&
                     <div id="home-jumbo" className="center main-jumbo jumbotron">
                         <div className="spinner-border home-spinner" role="status">
                             <span className="sr-only">Loading...</span>

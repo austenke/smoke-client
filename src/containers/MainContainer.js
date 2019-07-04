@@ -13,6 +13,7 @@ const stateToPropMapper = state => ({
     displayName: state.displayName,
     loggedIn: state.loggedIn,
     loading: state.loading,
+    initializing: state.initializing,
     playlists: state.playlists,
     savedPlaylists: state.savedPlaylists,
     exploreCards: state.exploreCards

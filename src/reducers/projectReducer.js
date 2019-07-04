@@ -1,12 +1,13 @@
 const projectReducer = (state={
-    user: {}, profile: {}, profileLoaded: false, displayName: "", loggedIn: false, loading: true,
+    user: {}, profile: {}, profileLoaded: false, displayName: "", loggedIn: false, loading: true, initializing: true,
     playlists: [], savedPlaylists: [], exploreCards: []}, action) => {
     switch (action.type) {
         case 'LOADING_COMPLETE':
             console.log("Loading complete");
             return {
                 ...state,
-                loading: false
+                loading: false,
+                initializing: false
             };
         case 'LOADING':
             console.log("Loading");
@@ -83,7 +84,7 @@ const projectReducer = (state={
                 exploreCards: [
                     {
                         displayName: "buster",
-                        id: "1cbe7ee7-1553-4780-ac72-277cc437cf96",
+                        id: "1428aece-bc8f-4817-aab9-f0bbb17df956",
                         playlistId: "spotify-37i9dQZF1DX70RN3TfWWJh"
                     }
                 ]
